@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Movie</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<header>
+        <div class="logo-container">
+            <img src="img/pelisplus.png" />
+        </div>
+    <nav>
+        <ul>
+            <li>
+                <button id="nowPlaying">EN CINES</button>
+            </li>
+            <li>
+                <button id="popular">MÁS POPULARES</button>
+            </li>
+            <li>
+                <button id="upcoming">PRÓXIMOS ESTRENOS</button>  
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <input type="text" placeholder="Buscar..." id="search" class="search"/>
+    </section>
+    <section>
+        <select name="filter" id="filterGenre"></select>
+    </section>
+</header>
+<body>
+    <section>
+        <div id="pelis"></div>
+    </section>
+    <div class="pagination">
+        <button class="page" id="prev">Página Anterior</button>
+        <div class="current" id="current">1</div>
+        <button class="page" id="next">Página Siguiente</button>
+        <div></div>
+    </div>
+</body>
+<script type="module" src="main.js"></script>
+</html>
