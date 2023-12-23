@@ -5,7 +5,7 @@ const url_path = "https://image.tmdb.org/t/p/w500" // Se utiliza esta ulr-path p
 const popularUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`; 
 
 
-//Obtener proximos estrenos de peliculas 
+//Obtiene las peliculas populares
 const getPopularMovies = async (page=1) => {
 
     const getTotalPagesFunction = createGetTotalPages(popularUrl);

@@ -5,7 +5,7 @@ const url_path = "https://image.tmdb.org/t/p/w500" // Se utiliza esta ulr-path p
 const upcomingUrl = `https://api.themoviedb.org/3/movie/upcoming?api_key=${apiKey}`; 
 
 
-//Obtener proximos estrenos de peliculas 
+//Obtiene proximos estrenos de peliculas 
 const getUpcomingMovies = async (page=1) => {
 
     const getTotalPagesFunction = createGetTotalPages(upcomingUrl);

@@ -5,7 +5,7 @@ const url_path = "https://image.tmdb.org/t/p/w500" // Se utiliza esta ulr-path p
 const nowPlayingUrl = `https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}`; 
 
 
-//Obtener proximos estrenos de peliculas 
+//Obtiene las peliculas que estan ahora en cines
 const getNowPlayingMovie = async (page=1) => {
 
     const getTotalPagesFunction = createGetTotalPages(nowPlayingUrl);
